@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rempah Guardian - Strong Immunity</title>
+
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Memuat Font Awesome (untuk Ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Memuat Font (Nunito, mirip dengan di screenshot) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        // Konfigurasi kustom Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // Mengatur font utama ke Nunito
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        // Warna kustom berdasarkan screenshot
+                        'page-bg': '#FFFCFA',       // Latar belakang utama (sangat pucat)
+                        'text-dark': '#1A1A1A',      // Teks hitam pekat / tombol
+                        'text-brand': '#C06C46',     // Oranye/Coklat untuk harga & subtitle
+                        'box-green': '#EBF2EA',     // Box fitur hijau
+                        'box-orange': '#FEF3E8',    // Box fitur oranye
+                        'box-purple': '#F5EEF8',    // Box fitur ungu
+                        'cta-pink': '#FFF3F0',      // Latar belakang CTA final
+                        'footer-dark': '#1C1C1C',    // Latar belakang footer
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-page-bg text-text-dark font-sans antialiased">
+
+    <!-- Kontainer Utama -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- HEADER -->
+        <header class="flex justify-between items-center py-8">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 text-xl font-bold">
+                <i class="fa-solid fa-leaf text-green-600"></i>
+                <span>Rempah Guardian</span>
+            </a>
+            <!-- Kontak -->
+            <a href="#footer-contact" class="flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-text-dark transition-colors">
+                <i class="fa-solid fa-phone"></i>
+                <span>KONTAK</span>
+            </a>
+        </header>
+
+        <main>
+
+            <!-- SECTION 1: HERO -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-12 md:py-20">
+                <!-- Kolom Teks -->
+                <div class="flex flex-col gap-6 items-start">
+                    <span class="inline-block bg-gray-100 text-brand text-xs font-bold px-4 py-2 rounded-full">
+                        <i class="fa-solid fa-wand-magic-sparkles text-xs mr-1"></i>
+                        MINUMAN REMPAH PREMIUM
+                    </span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-text-dark">Rempah Guardian</h1>
+                    <h2 class="text-5xl md:text-6xl font-extrabold text-text-brand -mt-4">STRONG IMMUNITY</h2>
+                    <p class="text-xl text-gray-600">Manis Madu, Tanpa Gula Tambahan</p>
+                    <div class="text-3xl font-extrabold text-text-brand">
+                        <span class="text-lg font-semibold text-gray-600">Hanya</span>
+                        Rp 12.000
+                    </div>
+                    
+                    <!-- Tombol WhatsApp -->
+                    <a href="https://api.whatsapp.com/send?phone=6282298532277&text=Halo,%20saya%20tertarik%20memesan%20Rempah%20Guardian%20STRONG%20IMMUNITY%20(Rp%2012K)."
+                       target="_blank"
+                       class="bg-text-dark text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-gray-800 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>
+                        PESAN SEKARANG VIA WHATSAPP
+                    </a>
+                    <p class="text-sm text-gray-500">Langsung terhubung ke whatsapp kami</p>
+                </div>
+                
+                <!-- Kolom Gambar -->
+                <div class="relative">
+                    <!-- GANTI 'src' DI BAWAH INI DENGAN URL GAMBAR PRODUK ANDA -->
+                    <img src="https://placehold.co/600x700/EAD9B7/8B4513?text=Gambar+Produk+Anda" 
+                         alt="Botol Rempah Guardian Strong Immunity"
+                         class="w-full h-auto object-cover rounded-3xl shadow-xl">
+                    <span class="absolute top-6 right-6 bg-white/90 text-green-700 text-sm font-semibold px-4 py-2 rounded-full shadow-md">
+                        <i class="fa-solid fa-leaf mr-1"></i>
+                        100% alami
+                    </span>
+                </div>
+            </section>
+
+            <!-- SECTION 2: KENAPA MEMILIH (FITUR) -->
+            <section class="py-16 md:py-24">
+                <h2 class="text-4xl font-extrabold text-center mb-12">Kenapa Memilih Rempah Guardian?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Fitur 1 -->
+                    <div class="bg-box-green p-8 rounded-3xl">
+                        <i class="fa-solid fa-leaf text-3xl text-green-700 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">4 Rempah Pilihan</h3>
+                        <p class="text-gray-600">Jahe, Kunyit, Kencur, dan Temulawak pilihan terbaik.</p>
+                    </div>
+                    <!-- Fitur 2 -->
+                    <div class="bg-box-orange p-8 rounded-3xl">
+                        <i class="fa-solid fa-droplet text-3xl text-yellow-700 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Pemanis Alami</h3>
+                        <p class="text-gray-600">Murni madu tanpa tambahan gula pasir atau pemanis buatan.</p>
+                    </div>
+                    <!-- Fitur 3 -->
+                    <div class="bg-box-purple p-8 rounded-3xl">
+                        <i class="fa-solid fa-wand-magic-sparkles text-3xl text-purple-700 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Praktis & Siap Minum</h3>
+                        <p class="text-gray-600">Jaga daya tahan tubuh Anda setiap hari tanpa repot.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: 4 REMPAH PILIHAN -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16">
+                <!-- Kolom Teks -->
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-6">4 Rempah Pilihan Terbaik</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Dipilih dengan cermat untuk memberikan manfaat maksimal bagi kesehatan dan daya tahan tubuh Anda.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-2xl text-green-600 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Jahe</h3>
+                                <p class="text-gray-600">Anti-inflamasi alami</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-2xl text-green-600 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Kunyit</h3>
+                                <p class="text-gray-600">Antioksidan tinggi</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-2xl text-green-600 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Kencur</h3>
+                                <p class="text-gray-600">Tingkatkan stamina</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-circle text-2xl text-green-600 mt-1"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Temulawak</h3>
+                                <p class="text-gray-600">Kesehatan liver</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Kolom Gambar -->
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- GANTI 'src' DI BAWAH INI DENGAN URL GAMBAR ANDA -->
+                    <img src="https://placehold.co/400x400/D2B48C/8B4513?text=Gambar+Jahe" alt="Jahe" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover">
+                    <img src="https://placehold.co/400x400/FFD700/D2691E?text=Gambar+Kunyit" alt="Kunyit" class="rounded-2xl shadow-lg w-full h-48 md:h-64 object-cover mt-8">
+                </div>
+            </section>
+
+            <!-- SECTION 4: MANIS ALAMI (MADU) -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16 md:py-24">
+                <!-- Kolom Gambar -->
+                <div>
+                    <!-- GANTI 'src' DI BAWAH INI DENGAN URL GAMBAR ANDA -->
+                    <img src="https://placehold.co/600x450/FFECB3/D2691E?text=Gambar+Madu+Murni" alt="Madu Murni" class="rounded-3xl shadow-xl w-full h-auto object-cover">
+                </div>
+                <!-- Kolom Teks -->
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-6">Manis Alami dari Madu Murni</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Kami menggunakan 100% madu asli sebagai pemanis alami. Tanpa tambahan gula pasir atau pemanis buatan. Rasakan manisnya yang alami dan sehat untuk tubuh Anda.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-700 bg-green-100 p-1 rounded-full"></i>
+                            <span class="text-gray-700 font-semibold">Tanpa gula tambahan</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-700 bg-green-100 p-1 rounded-full"></i>
+                            <span class="text-gray-700 font-semibold">Madu murni 100%</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-green-700 bg-green-100 p-1 rounded-full"></i>
+                            <span class="text-gray-700 font-semibold">Lebih sehat</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION 5: FINAL CTA -->
+            <section class="bg-cta-pink rounded-3xl my-16 md:my-24 p-8 md:p-16 text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Siap Jaga Imunitas Anda?</h2>
+                <p class="text-lg text-gray-600 max-w-xl mx-auto mb-10">
+                    Pesan Rempah Guardian sekarang dan rasakan manfaatnya untuk kesehatan Anda.
+                </p>
+                
+                <!-- Kotak Harga & Tombol -->
+                <div class="bg-white rounded-2xl shadow-xl max-w-2xl mx-auto p-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+                    <div class="text-left">
+                        <span class="text-sm font-bold text-gray-500">HARGA SPESIAL</span>
+                        <p class="text-4xl font-extrabold text-text-brand">Rp 12.000</p>
+                    </div>
+                    <!-- Tombol WhatsApp -->
+                    <a href="https://api.whatsapp.com/send?phone=6282298532277&text=Halo,%20saya%20tertarik%20memesan%20Rempah%20Guardian%20STRONG%20IMMUNITY%20(Rp%2012K)."
+                       target="_blank"
+                       class="bg-text-dark text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 w-full sm:w-auto">
+                        <i class="fa-brands fa-whatsapp mr-2"></i>
+                        PESAN VIA WHATSAPP SEKARANG
+                    </a>
+                </div>
+                
+                <p class="text-sm text-green-700 font-semibold mt-6">
+                    <i class="fa-solid fa-check-circle mr-1"></i>
+                    Stok terbatas - Pesan sekarang juga!
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-contact" class="bg-footer-dark text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Logo -->
+            <div class="flex flex-col items-center md:items-start">
+                <a href="#" class="flex items-center gap-2 text-xl font-bold mb-4">
+                    <i class="fa-solid fa-leaf text-green-500"></i>
+                    <span>Rempah Guardian</span>
+                </a>
+            </div>
+            
+            <!-- Kontak -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">Hubungi Kami</h4>
+                <a href="https://api.whatsapp.com/send?phone=6282298532277" 
+                   target="_blank"
+                   class="flex items-center justify-center md:justify-start gap-2 text-gray-300 hover:text-white transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+62 822-9853-2277</span>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="flex items-end justify-center md:justify-end text-sm text-gray-400">
+                <p>&copy; 2025 Rempah Guardian. Minuman Rempah Berkualitas.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
